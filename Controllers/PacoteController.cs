@@ -28,7 +28,7 @@ namespace Trabalho2_Banco_De_Dados.Controllers
             repositorio.Cadastra(p);
 
 
-            return RedirectToAction("Listar");
+            return View();
         }
 
         public IActionResult Salvar()
