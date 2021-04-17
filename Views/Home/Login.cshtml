@@ -1,0 +1,26 @@
+@model Usuario
+@{
+    ViewData["Title"] = "Login";
+}
+<div class="d-flex justify-content-center">
+    <div class="d-flex col-4 flex-column justify-content-center">
+        <h2 class="d-flex justify-content-center">Login</h2>
+        <p id="pMensagem" >@ViewBag.Mensagem</p>
+
+            <form asp-action="Login" method="POST">
+                <div class="form-group">
+                    <label asp-for="LogIn">Login:</label>
+                    <input asp-for="LogIn" class="form-control" />
+                
+                </div>
+                <div class="form-group">
+                    <label asp-for="Senha">Senha:</label>
+                    <input asp-for="Senha" type="password" class="form-control"/>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <input type="submit" value="Entrar" class="btn btn-secondary"/>
+                </div>
+            </form>
+
+    </div>
+</div>
