@@ -1,19 +1,20 @@
 @model List<Usuario>
 
 <h1>Lista de usuários</h1>
-    <table>
-        <tr>
-            <th>Id</th>
-            <th>Nome</th>
-            <th>Data nasc</th>
-            <th>Login</th>
-            <th>Senha</th>
-            <th>Tipo</th>
-            <th></th>
-            <th></th>
-            <th></th>
-
-        </tr>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Data nasc</th>
+                <th>Login</th>
+                <th>Senha</th>
+                <th>Tipo</th>
+                <th>#</th>
+                <th>#</th>
+                <th>#</th>
+            </tr>
+        </thead>
     @foreach(Usuario u in Model)
     {
             <tr>
@@ -38,4 +39,4 @@
     }
     </table>
 
-    <a href="/Usuario/Cadastro">Cadastrar mais um usuário.</a>
+    <a href="/Usuario/Cadastro" class="btn btn-success mt-2">Cadastrar mais um usuário.</a>
